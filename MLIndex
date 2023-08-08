@@ -1,0 +1,17 @@
+embeddings:
+  api_base: https://itcoml-aoai.openai.azure.com/
+  api_type: azure
+  api_version: 2023-03-15-preview
+  batch_size: '1'
+  connection:
+    id: /subscriptions/d541c414-562b-4cea-91b2-53bbfac1fb3b/resourceGroups/ai_poc/providers/Microsoft.MachineLearningServices/workspaces/itcoml/connections/Default_AzureOpenAI
+  connection_type: workspace_connection
+  deployment: ada-002
+  dimension: 1536
+  kind: open_ai
+  model: text-embedding-ada-002
+  schema_version: '2'
+index:
+  engine: langchain.vectorstores.FAISS
+  kind: faiss
+  method: FlatL2
